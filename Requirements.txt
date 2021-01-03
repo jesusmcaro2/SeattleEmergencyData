@@ -1,8 +1,0 @@
-psycopg2
-pandas 
-plotly.express
-datetime
-streamlit
-geopandas
-numpy
-base64
