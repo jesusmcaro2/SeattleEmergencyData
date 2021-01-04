@@ -76,8 +76,8 @@ sl.markdown("To include earlier dates, expand search criteria, or find out more 
 
 sl.sidebar.markdown("The source data contained herein is public data facilitated by the city of seattle\
                     via [data.seattle.gov](https://data.seattle.gov). Thorough documentation illustrating all\
-                    methodology and processes is currently being written, and will be cited here. You\
-                    may contact the owner [here](mailto:jmcaro2@icloud.com)")
+                    methodology and processes are currently being written, and will be cited here. You\
+                    may contact the owner by clicking [here](mailto:jmcaro2@icloud.com) .")
 ##
 ## Incident Count Map
 ##
@@ -286,4 +286,4 @@ where CAST(datetime as date) >= '" + start_date + "'"
     sl.markdown(get_table_download_link(df_raw), unsafe_allow_html=True)
 
 
-sl.markdown("Ran and maintained by [J. Caro](http://www.jesuscaro.org)")
+sl.markdown("Maintained by [J. Caro](http://www.jesuscaro.org).")
