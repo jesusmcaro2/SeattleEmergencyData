@@ -69,8 +69,8 @@ sl.markdown("# Seattle Emergency Dispatch Analytics")
 num_records = format(len(df),",")
 summary_count_str = "There have been **"+ num_records + "** incident records identified within Seattle neighborhoods  \nsince " + start_date
 sl.markdown(summary_count_str)
-
-
+sl.markdown("To include earlier dates, expand search criteria, or find out more about this app and it's owner, you may expand the pane to the left by clicking the arrow.")
+sl.sidebar.markdown("The source data contained herein is public data facilitated by the city of seattle via [data.seattle.gov](https://data.seattle.gov). Thorough documentation illustrating all methodology and processes is currently being written, and will be cited here. You may contact the owner [here](mailto:jmcaro2@icloud.com)")
 ##
 ## Incident Count Map
 ##
@@ -277,3 +277,6 @@ where CAST(datetime as date) >= '" + start_date + "'"
     df_raw = df_raw.loc[:,["address", "type", "datetime", "datetime_pst", "incident_number", "S_HOOD", "L_HOOD", "latitude", "longitude" ]]
     sl.dataframe(df_raw)
     sl.markdown(get_table_download_link(df_raw), unsafe_allow_html=True)
+
+
+sl.markdown("Run and maintained by [J. Caro](http://www.jesuscaro.org)")
