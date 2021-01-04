@@ -286,4 +286,4 @@ where CAST(datetime as date) >= '" + start_date + "'"
     sl.markdown(get_table_download_link(df_raw), unsafe_allow_html=True)
 
 
-sl.markdown("Run and maintained by [J. Caro](http://www.jesuscaro.org)")
+sl.markdown("Ran and maintained by [J. Caro](http://www.jesuscaro.org)")
