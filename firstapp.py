@@ -30,7 +30,7 @@ seattle_hoods_gdf = gpd.read_file("seattle_neighborhoods/City_Clerk_Neighborhood
 
 
 connection = psycopg2.connect(user = "jcaropostgres",
-                             password = "$in3$in3",
+                             password = "#########",
                              host = "jcarotest.cmu75txnffne.us-west-1.rds.amazonaws.com" ,
                              port = "5432",
                              database = "testing")
